@@ -14,3 +14,20 @@ try:
     result = divide(10, 0)
 except ValueError as e:
     print(e)  # 출력: 0으로 나눌 수 없습니다.
+
+
+
+try:
+    x = 10 / 0
+except ZeroDivisionError as e:
+    print("Error:", str(e))
+finally:
+    print("Finally block")
+
+# 여러 예외 처리
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Divided by zero")
+except ValueError:
+    print("Invalid value")
