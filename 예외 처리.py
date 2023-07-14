@@ -1,3 +1,18 @@
+try:
+    print("정수 덧셈 계산기")
+    a = int(input("첫 번째 숫자를 입력 해 주세요. : "))
+    b = int(input("두 번째 숫자를 입력 해 주세요. : "))
+except ValueError:
+    print("정수만 입력 해 주세요.")
+else:
+    print(f"\n\n계산 결과 = {a+b}")
+finally:
+    print("-예외 처리 예제-")
+
+
+
+
+
 # 예외 처리
 try:
     x = 10 / 0
